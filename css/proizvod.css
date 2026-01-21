@@ -1,0 +1,413 @@
+/* Postavlja pozadinu stranice na belu za product view */
+body {
+  /* Boji pozadinu u belo za ovu stranicu */
+  background: #ffffff;
+}
+.breadcrumbs {
+  /* Dodaje gornji razmak ispod navigacije */
+  margin: 18px auto 12px;
+  /* Boji tekst svetlosivo */
+  color: #5f6672;
+  /* Podesava veličinu fonta mrvicu manju */
+  font-size: 14px;
+}
+.crumb {
+  /* Drži svaki deo putanje u liniji */
+  display: inline-block;
+  /* Podebljava aktivni deo kasnije preko klase */
+  font-weight: 400;
+}
+.crumb-sep {
+  /* Dodaje razmak oko separatora */
+  margin: 0 6px;
+}
+.crumb.active {
+  /* Podebljava poslednju stavku */
+  font-weight: 700;
+  /* Boji je tamnije */
+  color: #0d1a2b;
+}
+.product-hero {
+  /* Dodaje donji razmak od hero dela */
+  margin: 10px auto 16px;
+}
+.hero-image {
+  /* Postavlja visinu placeholdera slike */
+  height: 420px;
+  /* Podesava širinu da ispuni kolonu */
+  width: 100%;
+  /* Boji pozadinu svetlosivo kao placeholder */
+  background: #f1f1f1;
+  /* Crta tanku ivicu oko placeholdera */
+  border: 1px solid #e4e7ed;
+  /* Zaobljava blago ivice */
+  border-radius: 4px;
+}
+.badge-placeholder {
+  /* Postavlja širinu značke */
+  width: 120px;
+  /* Postavlja visinu značke */
+  height: 160px;
+  /* Crta sivu ivicu oko značke */
+  border: 1px solid #b6b6b6;
+  /* Poravnava tekst centrirano */
+  text-align: center;
+  /* Podesava veličinu fonta */
+  font-size: 20px;
+  /* Podebljava tekst */
+  font-weight: 700;
+  /* Poravnava vertikalno uz padding */
+  padding-top: 24px;
+  /* Boji pozadinu svetlosivo */
+  background: #f8f8f8;
+  /* Poravnava značku na desnu stranu */
+  margin-left: auto;
+}
+.product-wrap {
+  /* Dodaje razmak ispod glavnog bloka */
+  margin-bottom: 24px;
+  /* Obezbeđuje da floatovane kolone ne izlaze iz kontejnera */
+  overflow: hidden;
+}
+.info-col {
+  /* Podesava širinu info kolone */
+  width: 38%;
+  /* Postavlja kolonu desno */
+  float: right;
+  /* Dodaje razmak levo od galerije */
+  margin-left: 2%;
+  /* Dodaje mali gornji razmak da se poravna sa vrhom slike */
+  margin-top: 10px;
+}
+.gallery-col {
+  /* Podesava širinu galerije (slike + thumbovi) */
+  width: 58%;
+  /* Postavlja kolonu levo */
+  float: left;
+}
+.info-col {
+  /* Podesava širinu info kolone */
+  width: 38%;
+  /* Postavlja kolonu desno */
+  float: right;
+  /* Dodaje razmak levo od galerije */
+  margin-left: 2%;
+}
+.thumbs-row {
+  /* Poravnava centralno red sa sličicama */
+  text-align: center;
+  /* Dodaje gornji razmak */
+  margin-top: 12px;
+  /* Uklanja efekat floatova iznad */
+  clear: both;
+  /* Uklanja razmak između inline elemenata */
+  font-size: 0;
+  /* Dodaje donji razmak da ne nalegne na opis */
+  margin-bottom: 16px;
+}
+.thumb-arrow {
+  /* Prikazuje strelicu kao inline blok */
+  display: inline-block;
+  /* Podesava veličinu kvadrata strelice */
+  width: 30px;
+  /* Podesava visinu kvadrata */
+  height: 30px;
+  /* Crta ivicu oko dugmeta */
+  border: 1px solid #d0d5dc;
+  /* Zaobljava ivice */
+  border-radius: 50%;
+  /* Vertikalno centrira tekst */
+  line-height: 30px;
+  /* Poravnava ikonu u sredinu */
+  text-align: center;
+  /* Boji pozadinu belo */
+  background: #ffffff;
+  /* Menja kursor u ruku */
+  cursor: pointer;
+  /* Dodaje horizontalni razmak */
+  margin: 0 6px;
+  /* Poravnava vertikalno elemente u sredinu */
+  vertical-align: middle;
+}
+.thumb-box {
+  /* Prikazuje sličicu kao inline blok */
+  display: inline-block;
+  /* Podesava širinu sličice */
+  width: 104px;
+  /* Podesava visinu sličice */
+  height: 76px;
+  /* Crta ivicu oko sličice */
+  border: 1px solid #d0d5dc;
+  /* Boji pozadinu svetlosivo */
+  background: #f6f6f6;
+  /* Dodaje razmak između sličica */
+  margin: 0 5px;
+  /* Zaobljava blago ivice */
+  border-radius: 4px;
+  /* Poravnava vertikalno elemente u sredinu */
+  vertical-align: middle;
+}
+.thumb-box.active {
+  /* Boji ivicu aktivne sličice tamnije */
+  border-color: #233553;
+  /* Dodaje unutrašnji sjaj */
+  box-shadow: 0 0 0 3px #233553 inset;
+}
+.tabs {
+  /* Dodaje donju ivicu kao separator */
+  border-bottom: 1px solid #dcdfe6;
+  /* Dodaje donji razmak */
+  margin-bottom: 14px;
+}
+.tab {
+  /* Prikazuje tab kao inline blok */
+  display: inline-block;
+  /* Dodaje unutrašnji razmak za klik zonu */
+  padding: 12px 18px;
+  /* Boji pozadinu svetlosivo */
+  background: #f4f4f4;
+  /* Crta ivicu oko taba */
+  border: 1px solid #dcdfe6;
+  /* Menja kursor u ruku */
+  cursor: pointer;
+  /* Boji tekst tamno plavo */
+  color: #0d1a2b;
+  /* Postavlja gornju marginu na 0 */
+  margin-top: 0;
+}
+.tab + .tab {
+  /* Uklanja spajanje ivica sledećih tabova */
+  margin-left: -1px;
+}
+.tab.active {
+  /* Boji aktivni tab svetložuto */
+  background: #f3d9aa;
+  /* Podebljava tekst aktivnog taba */
+  font-weight: 700;
+}
+.tab-content {
+  /* Boji pozadinu belom */
+  background: #ffffff;
+  /* Crta ivicu oko sadržaja */
+  border: 1px solid #dcdfe6;
+  /* Dodaje unutrašnji razmak */
+  padding: 14px 18px;
+  /* Zaobljava ivice blago */
+  border-radius: 4px;
+}
+.desc-title {
+  /* Podebljava naslov sekcije */
+  font-weight: 700;
+  /* Podesava veličinu fonta */
+  font-size: 16px;
+  /* Dodaje donji razmak */
+  margin-bottom: 10px;
+}
+.desc-list {
+  /* Uklanja default marker liste */
+  list-style: none;
+  /* Uklanja levu marginu liste */
+  margin-left: 0;
+}
+.desc-list li {
+  /* Dodaje donji razmak između stavki */
+  margin-bottom: 10px;
+  /* Podesava visinu linije radi čitljivosti */
+  line-height: 1.4;
+  /* Boji tekst tamno plavo */
+  color: #1a2735;
+}
+.dot {
+  /* Prikazuje tačku kao inline blok */
+  display: inline-block;
+  /* Podesava prečnik tačke */
+  width: 6px;
+  /* Podesava visinu tačke */
+  height: 6px;
+  /* Zaobljava tačku potpuno */
+  border-radius: 50%;
+  /* Boji tačku tamno plavo */
+  background: #1a2735;
+  /* Dodaje razmak desno od tačke */
+  margin-right: 8px;
+}
+.price-box {
+  /* Boji pozadinu belom */
+  background: #ffffff;
+  /* Crta ivicu oko kutije */
+  border: 1px solid #dcdfe6;
+  /* Zaobljava ivice blago */
+  border-radius: 6px;
+  /* Dodaje unutrašnji razmak */
+  padding: 16px;
+  /* Poravnava sadržaj ulevo */
+  text-align: left;
+}
+.price-header {
+  /* Dodaje donji razmak ispod headera */
+  margin-bottom: 12px;
+}
+.label {
+  /* Prikazuje oznaku kao inline blok */
+  display: inline-block;
+  /* Dodaje unutrašnji razmak */
+  padding: 6px 10px;
+  /* Zaobljava ivice */
+  border-radius: 4px;
+  /* Menja boju teksta u belo */
+  color: #ffffff;
+  /* Podesava veličinu fonta */
+  font-size: 12px;
+  /* Dodaje desni razmak */
+  margin-right: 6px;
+}
+.label.red {
+  /* Boji pozadinu crveno */
+  background: #dd2c2c;
+}
+.label.green {
+  /* Boji pozadinu zeleno */
+  background: #3a8f2c;
+}
+.rating {
+  /* Boji tekst tamno plavo */
+  color: #0d1a2b;
+  /* Dodaje razmak levo */
+  margin-left: 6px;
+}
+.rating .material-icons {
+  /* Boji zvezdicu žuto */
+  color: #ffbe21;
+  /* Poravnava ikonu sa tekstom */
+  vertical-align: middle;
+  /* Podesava veličinu ikone */
+  font-size: 18px;
+}
+.actions {
+  /* Poravnava akcione ikone desno */
+  float: right;
+}
+.actions .material-icons {
+  /* Boji akcione ikone sivo */
+  color: #5f6672;
+  /* Dodaje razmak levo */
+  margin-left: 6px;
+  /* Menja kursor u ruku */
+  cursor: pointer;
+}
+.product-title {
+  /* Podebljava naziv proizvoda */
+  font-weight: 700;
+  /* Podesava veličinu fonta */
+  font-size: 20px;
+  /* Dodaje donji razmak */
+  margin-bottom: 8px;
+  /* Boji tekst tamno plavo */
+  color: #0d1a2b;
+}
+.ean {
+  /* Boji tekst sivo */
+  color: #5f6672;
+  /* Podesava veličinu fonta */
+  font-size: 14px;
+  /* Dodaje donji razmak */
+  margin-bottom: 6px;
+}
+.stock {
+  /* Boji tekst zeleno */
+  color: #3a8f2c;
+  /* Dodaje donji razmak */
+  margin-bottom: 10px;
+}
+.stock .material-icons {
+  /* Poravnava ikonu sa tekstom */
+  vertical-align: middle;
+  /* Dodaje razmak desno */
+  margin-right: 4px;
+}
+.old-price {
+  /* Precrtava staru cenu */
+  text-decoration: line-through;
+  /* Boji je sivo */
+  color: #7f8693;
+  /* Dodaje donji razmak */
+  margin-bottom: 6px;
+}
+.current-price {
+  /* Podebljava trenutnu cenu */
+  font-weight: 700;
+  /* Podesava veličinu fonta */
+  font-size: 26px;
+  /* Boji tamno plavo */
+  color: #0d1a2b;
+  /* Dodaje donji razmak */
+  margin-bottom: 6px;
+}
+.savings {
+  /* Boji tekst crveno */
+  color: #dd2c2c;
+  /* Podesava veličinu fonta */
+  font-size: 14px;
+  /* Dodaje donji razmak */
+  margin-bottom: 10px;
+}
+.credit {
+  /* Boji tekst sivo */
+  color: #5f6672;
+  /* Podesava veličinu fonta */
+  font-size: 14px;
+  /* Dodaje donji razmak */
+  margin-bottom: 12px;
+}
+.buttons {
+  /* Dodaje donji razmak ispod dugmadi */
+  margin-bottom: 12px;
+}
+.btn-primary {
+  /* Prikazuje glavno dugme kao blok */
+  display: inline-block;
+  /* Boji pozadinu u žuto */
+  background: #ffbe21;
+  /* Boji tekst tamno plavo */
+  color: #0d1a2b;
+  /* Dodaje unutrašnji razmak */
+  padding: 10px 14px;
+  /* Zaobljava ivice */
+  border-radius: 4px;
+  /* Menja kursor u ruku */
+  cursor: pointer;
+  /* Dodaje desni razmak */
+  margin-right: 8px;
+  /* Podesava veličinu fonta */
+  font-size: 14px;
+}
+.btn-primary .material-icons {
+  /* Poravnava ikonu sa tekstom */
+  vertical-align: middle;
+  /* Dodaje razmak desno */
+  margin-right: 6px;
+}
+.btn-secondary {
+  /* Prikazuje drugo dugme kao blok */
+  display: inline-block;
+  /* Boji pozadinu svetlosivo */
+  background: #e5e7eb;
+  /* Boji tekst tamno plavo */
+  color: #0d1a2b;
+  /* Dodaje unutrašnji razmak */
+  padding: 10px 14px;
+  /* Zaobljava ivice */
+  border-radius: 4px;
+  /* Menja kursor u ruku */
+  cursor: pointer;
+  /* Podesava veličinu fonta */
+  font-size: 14px;
+}
+.notes {
+  /* Boji tekst sivo */
+  color: #5f6672;
+  /* Podesava veličinu fonta */
+  font-size: 14px;
+  /* Dodaje gornji razmak */
+  margin-top: 8px;
+}

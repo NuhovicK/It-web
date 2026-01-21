@@ -1,0 +1,429 @@
+/* Reset osnovnih margina da sve krene od ivice */
+body, h1, h2, h3, p, ul {
+  /* Ukida podrazumevanu marginu svih elemenata */
+  margin: 0;
+  /* Ukida podrazumevani padding svih elemenata */
+  padding: 0;
+}
+body {
+  /* Postavlja Roboto kao glavni font */
+  font-family: 'Roboto', sans-serif;
+  /* Boji pozadinu svetlosivo */
+  background: #f5f5f5;
+  /* Postavlja osnovnu boju teksta tamno plavu */
+  color: #0d1a2b;
+}
+a {
+  /* Uklanja podvlačenje sa linkova */
+  text-decoration: none;
+  /* Nasleđuje boju iz roditelja */
+  color: inherit;
+}
+.container {
+  /* Ograničava širinu sadržaja */
+  max-width: 1200px;
+  /* Cetrira blok horizontalno */
+  margin: 0 auto;
+}
+.top-bar {
+  /* Farba pozadinu u crno */
+  background: #010101;
+  /* Postavlja svetlosivu boju teksta */
+  color: #dcdfe6;
+  /* Dodaje vertikalni padding */
+  padding: 14px 0;
+  /* Postavlja veličinu fonta */
+  font-size: 16px;
+}
+.top-bar .inner {
+  /* Dodaje horizontalni prostor unutar trake */
+  padding: 0 28px;
+}
+.top-bar .left, .top-bar .right {
+  /* Prikazuje elemente u liniji */
+  display: inline-block;
+  /* Vertikalno poravnanje sa sredinom */
+  vertical-align: middle;
+}
+.top-bar .item {
+  /* Drži stavke u jednom redu */
+  display: inline-block;
+  /* Dodaje razmak među stavkama */
+  margin-right: 18px;
+  /* Menja kursor u ruku */
+  cursor: pointer;
+}
+.top-bar .right {
+  /* Gura desnu grupu na desnu stranu */
+  float: right;
+  /* Poravnava tekst desno */
+  text-align: right;
+}
+.top-bar .right .item {
+  /* Razmak za desni blok sa leve strane */
+  margin-right: 0;
+  /* Postavlja razmak sa leve strane */
+  margin-left: 18px;
+}
+.accent {
+  /* Farba naglašeni tekst u žuto */
+  color: #ffbe21;
+  /* Podebljava naglašeni tekst */
+  font-weight: 500;
+}
+.top-bar .call-text {
+  /* Farba tekst poziva u belo */
+  color: #ffffff;
+  /* Podebljava tekst poziva */
+  font-weight: 500;
+}
+.top-bar .material-icons {
+  /* Farba ikone u belo */
+  color: #ffffff;
+  /* Podesava veličinu ikona */
+  font-size: 20px;
+  /* Poravnava ikone po sredini teksta */
+  vertical-align: middle;
+}
+.top-bar .item span {
+  /* Poravnava sve span elemente u liniji */
+  vertical-align: middle;
+}
+.search-bar {
+  /* Postavlja crnu pozadinu (kao na slici) */
+  background: #010101;
+  /* Dodaje vertikalni padding */
+  padding: 18px 0;
+  /* Crta donju ivicu */
+  border-bottom: 1px solid #e4e7ed;
+}
+.search-bar .inner {
+  /* Dodaje horizontalni padding oko sadržaja */
+  padding: 0 28px;
+}
+.logo-wrap {
+  /* Drži logo u liniji sa pretragom */
+  display: inline-block;
+  /* Poravnava vertikalno na sredinu */
+  vertical-align: middle;
+  /* Dodaje razmak desno od logotipa */
+  margin-right: 28px;
+}
+.logo-wrap img {
+  /* Podesava visinu logotipa */
+  height: 46px;
+  /* Uklanja praznine ispod slike */
+  display: block;
+}
+.search-box {
+  /* Drži pretragu u liniji sa logoom */
+  display: inline-block;
+  /* Poravnava vertikalno na sredinu */
+  vertical-align: middle;
+  /* Širi pretragu preko većeg dela prostora */
+  width: 60%;
+}
+.search-wrapper {
+  /* Drži polje i dugme kao jednu celinu */
+  display: inline-block;
+  /* Podešava visinu okvira da prati polje */
+  height: 42px;
+  /* Zaobljava ivice okvira */
+  border-radius: 26px;
+  /* Crta tanku ivicu okvira */
+  border: 1px solid #dcdfe6;
+  /* Boji pozadinu belom za ceo skup */
+  background: #ffffff;
+  /* Sakriva prelome ivica */
+  overflow: hidden;
+  /* Popunjava širinu dostupnog prostora */
+  width: 100%;
+  /* Sprečava prelazak u novi red u okviru */
+  white-space: nowrap;
+  /* Uklanja razmak između inline elemenata */
+  font-size: 0;
+}
+.search-field {
+  /* Drži polje pretrage kao inline blok */
+  display: inline-block;
+  /* Boji pozadinu svetlosivo */
+  background: #ffffff;
+  /* Zaobljava ivice polja */
+  border-radius: 26px;
+  /* Dodaje unutrašnji razmak */
+  padding: 10px 16px 10px 14px;
+  /* Podesava minimalnu širinu */
+  min-width: 520px;
+  /* Crta tanku ivicu oko polja */
+  border: none;
+  /* Proširuje polje na celu širinu okvira */
+  width: calc(100% - 42px);
+  /* Uključuje padding u računanje širine */
+  box-sizing: border-box;
+  /* Vraća normalnu veličinu fonta u polju */
+  font-size: 16px;
+  /* Poravnava sadržaj polja po sredini vertikalno */
+  line-height: 22px;
+  /* Podešava visinu polja na okvir */
+  height: 42px;
+  /* Poravnava polje sa dugmetom po sredini */
+  vertical-align: middle;
+}
+.search-field .placeholder {
+  /* Boji tekst placeholdera sivo-plavo */
+  color: #7f8693;
+  /* Podesava veličinu fonta placeholdera */
+  font-size: 16px;
+  /* Poravnava tekst sa ikonom */
+  vertical-align: middle;
+}
+.search-actions {
+  /* Drži desne akcije u liniji */
+  display: inline-block;
+  /* Poravnava vertikalno na sredinu */
+  vertical-align: middle;
+  /* Gura blok ka desnoj strani */
+  float: right;
+  /* Uklanja dodatni razmak odozgo */
+  margin-top: 0;
+  /* Poravnava vertikalno uz visinu polja */
+  line-height: 42px;
+}
+.search-actions .action {
+  /* Drži pojedinačne akcije u liniji */
+  display: inline-block;
+  /* Dodaje horizontalni razmak među akcijama */
+  margin-left: 20px;
+  /* Podesava veličinu fonta */
+  font-size: 16px;
+  /* Farba tekst u svetlosivo */
+  color: #ffffff;
+  /* Menja kursor u ruku */
+  cursor: pointer;
+}
+.search-actions .material-icons {
+  /* Poravnava ikonu sa tekstom */
+  vertical-align: middle;
+  /* Dodaje razmak desno od ikone */
+  margin-right: 6px;
+  /* Podesava veličinu ikona */
+  font-size: 20px;
+}
+.search-actions .white {
+  /* Farba istaknuti tekst u belo */
+  color: #ffffff;
+}
+.search-button {
+  /* Prikazuje dugme kao krug */
+  display: inline-block;
+  /* Podesava prečnik kruga */
+  width: 42px;
+  /* Podesava visinu kruga */
+  height: 42px;
+  /* Zaobljava ivice u krug */
+  border-radius: 50%;
+  /* Boji pozadinu u žuto */
+  background: #ffbe21;
+  /* Centrira ikonu horizontalno */
+  text-align: center;
+  /* Centrira ikonu vertikalno kroz line-height */
+  line-height: 42px;
+  /* Dodaje razmak levo od polja */
+  margin-left: 0;
+  /* Menja kursor u ruku */
+  cursor: pointer;
+  /* Vraća normalnu veličinu fonta u dugmetu */
+  font-size: 16px;
+  /* Poravnava dugme sa poljem pretrage */
+  vertical-align: middle;
+  /* Pozicionira dugme u visini polja */
+  height: 42px;
+  /* Podesava line-height da centriramo ikonu */
+  line-height: 42px;
+}
+.search-button .material-icons {
+  /* Farba ikonu u tamno plavo */
+  color: #0d1a2b;
+  /* Podesava veličinu ikone */
+  font-size: 22px;
+  /* Prikazuje ikonu inline da prati line-height dugmeta */
+  display: inline-block;
+  /* Poravnava ikonu po sredini */
+  vertical-align: middle;
+}
+.nav-bar {
+  /* Postavlja belu pozadinu za meni */
+  background: #ffffff;
+  /* Dodaje vertikalni padding */
+  padding: 14px 0;
+  /* Crta donju ivicu */
+  border-bottom: 1px solid #e4e7ed;
+}
+.nav-bar .inner {
+  /* Dodaje horizontalni padding oko stavki */
+  padding: 0 28px;
+}
+.nav-item {
+  /* Drži stavke menija u liniji */
+  display: inline-block;
+  /* Dodaje razmak među stavkama */
+  margin-right: 30px;
+  /* Boji tekst tamno plavo */
+  color: #0d1a2b;
+  /* Podesava veličinu fonta stavki */
+  font-size: 17px;
+  /* Blago podebljava tekst */
+  font-weight: 500;
+  /* Menja kursor u ruku */
+  cursor: pointer;
+}
+.nav-item .material-icons {
+  /* Poravnava ikone sa tekstom */
+  vertical-align: middle;
+  /* Dodaje razmak desno od ikone */
+  margin-right: 8px;
+  /* Boji ikonu tamno plavo */
+  color: #1a2735;
+}
+.nav-badge {
+  /* Prikazuje bedž kao inline blok */
+  display: inline-block;
+  /* Dodaje unutrašnji razmak */
+  padding: 8px 16px;
+  /* Zaobljava ivice bedža */
+  border-radius: 6px;
+  /* Farba tekst u belo */
+  color: #ffffff;
+  /* Podebljava tekst bedža */
+  font-weight: 700;
+  /* Podesava veličinu fonta bedža */
+  font-size: 15px;
+  /* Menja kursor u ruku */
+  cursor: pointer;
+}
+.badge-gaming {
+  /* Boji Gaming bedž tamno plavo-ljubičasto */
+  background: #394165;
+  /* Dodaje razmak desno */
+  margin-right: 10px;
+}
+.badge-gigamax {
+  /* Boji GigaMAX bedž tamno plavo */
+  background: #1c2738;
+}
+.footer {
+  /* Postavlja crnu pozadinu podnožja */
+  background: #010101;
+  /* Boji tekst u svetlosivo */
+  color: #dcdfe6;
+  /* Dodaje vertikalni padding */
+  padding: 40px 0 32px;
+}
+.footer .inner {
+  /* Dodaje horizontalni padding unutar podnožja */
+  padding: 0 28px;
+}
+.footer .footer-logo {
+  /* Prikazuje logo kao blok */
+  display: block;
+  /* Dodaje razmak ispod logotipa */
+  margin-bottom: 24px;
+  /* Podesava visinu logotipa */
+  height: 42px;
+}
+.footer-columns {
+  /* Dodaje razmak iznad kolona */
+  margin-top: 14px;
+}
+.footer-col {
+  /* Drži kolonu kao inline blok */
+  display: inline-block;
+  /* Poravnava kolone na vrh */
+  vertical-align: top;
+  /* Postavlja širinu kolone */
+  width: 16%;
+  /* Dodaje razmak među kolonama */
+  margin-right: 2%;
+}
+.footer-col h3 {
+  /* Podesava veličinu naslova kolone */
+  font-size: 16px;
+  /* Dodaje razmak ispod naslova */
+  margin-bottom: 12px;
+  /* Boji naslov svetlosivo */
+  color: #dcdfe6;
+}
+.footer-col ul {
+  /* Uklanja marker liste */
+  list-style: none;
+}
+.footer-col li {
+  /* Dodaje vertikalni razmak među stavkama */
+  margin-bottom: 8px;
+  /* Podesava veličinu teksta stavki */
+  font-size: 15px;
+  /* Boji stavke u sivu */
+  color: #c5c9d3;
+}
+.social {
+  /* Dodaje razmak iznad ikona mreža */
+  margin-top: 8px;
+}
+.social .icon-circle {
+  /* Prikazuje ikonu kao krug */
+  display: inline-block;
+  /* Podesava širinu kruga */
+  width: 36px;
+  /* Podesava visinu kruga */
+  height: 36px;
+  /* Zaobljava krug u potpunosti */
+  border-radius: 50%;
+  /* Boji pozadinu kruga tamno plavo */
+  background: #1a2735;
+  /* Centira ikonu horizontalno */
+  text-align: center;
+  /* Centira ikonu vertikalno kroz visinu */
+  line-height: 36px;
+  /* Dodaje razmak desno od ikona */
+  margin-right: 10px;
+  /* Farba ikonu u belo */
+  color: #ffffff;
+}
+.footer-divider {
+  /* Uklanja default ivice */
+  border: none;
+  /* Crta tanku liniju odozgo */
+  border-top: 1px solid #1a1f2e;
+  /* Dodaje vertikalni razmak linije */
+  margin: 28px 0 22px;
+}
+.card-row {
+  /* Centira logotipe kartica */
+  text-align: center;
+}
+.card-row .card {
+  /* Prikazuje karticu kao inline blok */
+  display: inline-block;
+  /* Dodaje horizontalni i vertikalni razmak među karticama */
+  margin: 0 6px 8px;
+  /* Boji pozadinu kartice svetlosivo */
+  background: #f5f5f5;
+  /* Dodaje unutrašnji razmak kartici */
+  padding: 6px 12px;
+  /* Zaobljava ivice kartice */
+  border-radius: 4px;
+  /* Podesava veličinu slova u kartici */
+  font-size: 12px;
+  /* Boji tekst kartice tamno plavo */
+  color: #0d1a2b;
+}
+.footer-copy {
+  /* Centira tekst autorskih prava */
+  text-align: center;
+  /* Podesava veličinu slova */
+  font-size: 14px;
+  /* Boji tekst svetlosivo */
+  color: #aeb6c2;
+  /* Dodaje mali razmak od elemenata iznad */
+  margin-top: 4px;
+}
